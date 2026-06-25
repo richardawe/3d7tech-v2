@@ -1,0 +1,151 @@
+# 3D7 Tech — Full Site Content
+
+> Business Transformation & AI Automation Consultants helping SMEs save time, reduce costs and scale. Based in North West England, UK.
+
+---
+
+## About 3D7 Tech
+
+3D7 Tech is a Business Transformation and AI Automation consultancy based in North West England. We help small and medium-sized businesses with 10–250 employees save time, reduce costs and scale through practical process improvement and AI automation.
+
+We are not a software vendor. We identify where your business is losing time and money, design the right solution, and implement it — or support your team to do so. We focus on practical outcomes, not technology for its own sake.
+
+Our consultants have experience across process improvement, AI strategy, Microsoft Power Platform, Copilot, and digital transformation for professional services, trades, and operational businesses.
+
+---
+
+## The Problem We Solve
+
+Most growing SMEs face the same operational problems:
+
+- Staff spending hours on manual data entry, copy-paste work and repetitive admin
+- Processes that depend entirely on one person's knowledge — creating risk and bottlenecks
+- Spreadsheets, email threads and disconnected platforms that never talk to each other
+- No visibility of what is working — decisions made from gut feel rather than data
+- Technology being bought but never fully adopted, so it sits unused
+
+These problems typically cost SMEs 20–30% of productive time. That is time that could be spent on client work, sales, or growth.
+
+---
+
+## Services
+
+### Process Health Check — £995 to £2,500
+
+A structured review of your key business operations. Deliverables:
+
+- Process mapping across your key operations
+- Pain point and bottleneck analysis
+- Cost of inefficiency assessment
+- Prioritised improvement roadmap
+- 90-minute findings presentation
+
+Best for: businesses that know something is slowing them down but are not sure where to start.
+
+### AI Readiness Assessment — £1,500 to £5,000
+
+An honest assessment of where AI can genuinely help your business. Deliverables:
+
+- Current systems and workflow review
+- AI opportunities assessment
+- Data readiness review
+- Security and compliance considerations
+- Practical AI roadmap with ROI estimates
+
+Best for: business owners and operations leaders who want to understand AI without the hype.
+
+### Automation & Implementation — £3,000 to £20,000+
+
+We design and build the automation. Deliverables vary by project but typically include:
+
+- Microsoft Power Platform solutions
+- Copilot deployment and user adoption
+- AI-powered document processing
+- Customer service chatbots
+- Workflow automation and dashboards
+- Knowledge management systems
+
+Best for: businesses ready to act on their improvement roadmap or automate a specific process.
+
+### Fractional Transformation Partner — £1,000 to £5,000 per month
+
+An ongoing retained engagement where we act as your embedded Process Improvement Lead and AI Transformation Advisor. Includes:
+
+- Ongoing Process Improvement Lead
+- AI Transformation Advisor
+- Change Management Partner
+- Regular strategy sessions
+- Priority implementation support
+
+Best for: growing businesses that need ongoing transformation support without hiring a full-time head of operations or technology.
+
+---
+
+## Sectors We Work With
+
+We work with SMEs in the following sectors across North West England:
+
+- **Accountancy Firms**: Automating client onboarding, document collection, VAT return workflows, HMRC submissions
+- **Solicitors**: Automating matter opening, client ID verification, document generation, billing workflows
+- **Estate Agencies**: Automating property listings, applicant matching, compliance documentation, referral workflows
+- **Construction Companies**: Automating job costing, subcontractor onboarding, compliance documentation, site reporting
+- **Recruitment Firms**: Automating CV screening, candidate communications, client reporting, compliance checks
+- **Healthcare Practices**: Automating appointment scheduling, patient communications, reporting, referral workflows
+- **Manufacturing SMEs**: Automating production reporting, quality control documentation, supplier communications, inventory alerts
+- **Logistics Companies**: Automating job scheduling, driver communications, proof of delivery processing, client reporting
+
+---
+
+## The 10 Processes Every SME Should Automate in 2026
+
+We publish a free guide covering the most impactful automation opportunities for SMEs. The 10 processes are:
+
+1. New client and customer onboarding
+2. Invoice creation and payment chasing
+3. Staff and contractor onboarding
+4. Meeting notes and action tracking
+5. Document generation and approval workflows
+6. CRM data entry and lead follow-up
+7. Scheduling and appointment booking
+8. Monthly reporting and KPI dashboards
+9. Compliance checks and audit trails
+10. Internal knowledge base and staff Q&A
+
+Download free at: https://richardawo.github.io/3d7tech-v2/audit.html
+
+---
+
+## Frequently Asked Questions
+
+**What size business do you typically work with?**
+We work with businesses that have between 10 and 250 employees. Our sweet spot is 20–100 staff where operational inefficiency is clearly costing time and money but there is no dedicated operations or technology team.
+
+**Do you only work in the North West?**
+Our primary focus is North West England — Greater Manchester, Merseyside, Lancashire, Cheshire, and Cumbria. We also work with clients across the UK for remote-delivery projects.
+
+**How long does a typical project take?**
+A Process Health Check typically takes 2–4 weeks. An AI Readiness Assessment takes 3–6 weeks. Implementation projects range from 6 weeks to 6 months depending on scope.
+
+**Do you work with non-technical businesses?**
+Yes. Most of our clients have no dedicated IT or technology function. We handle the technical side and train your team to use and maintain the solutions we build.
+
+**Do you resell software?**
+No. We are vendor-neutral. We recommend the tools that best fit each client's situation and budget, and we help implement them — but we do not take commissions from software vendors.
+
+**What is your approach to AI?**
+We are pragmatic. We only recommend AI where it genuinely improves outcomes. We do not oversell AI capabilities. Every engagement starts with understanding the business problem, not the technology.
+
+**How do you charge?**
+We charge fixed fees for defined scopes (Process Health Check and AI Readiness Assessment) and project fees or monthly retainers for implementation and fractional work. No hidden costs or day-rate surprises.
+
+**How do I get started?**
+Book a free 30-minute discovery call at: https://richardawo.github.io/3d7tech-v2/book.html
+
+---
+
+## Contact
+
+- Process Improvement enquiries: abi@3d7tech.com
+- AI & Automation enquiries: richard@3d7tech.com
+- Location: North West England, UK
+- Book a free call: https://richardawo.github.io/3d7tech-v2/book.html

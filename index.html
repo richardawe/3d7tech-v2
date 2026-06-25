@@ -29,6 +29,10 @@
   <link rel="icon"             href="assets/favicon-16x16.png"    type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
+  <!-- AI discoverability -->
+  <link rel="alternate" type="text/plain" title="LLMs.txt" href="llms.txt">
+
+  <!-- Schema: Organisation -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,9 +41,42 @@
     "url": "https://richardawe.github.io/3d7tech-v2/",
     "logo": "https://richardawe.github.io/3d7tech-v2/assets/logo.svg",
     "email": "richard@3d7tech.com",
-    "description": "Business Transformation & AI Automation Consultants helping SMEs save time, reduce costs and scale.",
+    "description": "Business Transformation and AI Automation Consultants helping SMEs with 10-250 employees save time, reduce costs and scale. Based in North West England.",
     "areaServed": "North West England",
-    "serviceType": ["Process Improvement", "AI Automation", "Digital Transformation"]
+    "knowsAbout": ["Process Improvement", "AI Automation", "Digital Transformation", "Microsoft Power Platform", "Copilot", "Workflow Automation", "Business Transformation"],
+    "serviceType": ["Process Improvement", "AI Automation", "Digital Transformation"],
+    "priceRange": "££"
+  }
+  </script>
+
+  <!-- Schema: Services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "3D7 Tech Service Packages",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "item": { "@type": "Service", "name": "Process Health Check", "description": "Full process mapping, pain point analysis, cost of inefficiency assessment and prioritised improvement roadmap for SMEs.", "provider": { "@type": "Organization", "name": "3D7 Tech" }, "offers": { "@type": "Offer", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "995", "maxPrice": "2500", "priceCurrency": "GBP" } } } },
+      { "@type": "ListItem", "position": 2, "item": { "@type": "Service", "name": "AI Readiness Assessment", "description": "Systems and workflow review, AI opportunities assessment, data readiness review and practical AI roadmap with ROI estimates for SMEs.", "provider": { "@type": "Organization", "name": "3D7 Tech" }, "offers": { "@type": "Offer", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "1500", "maxPrice": "5000", "priceCurrency": "GBP" } } } },
+      { "@type": "ListItem", "position": 3, "item": { "@type": "Service", "name": "Automation & Implementation", "description": "Microsoft Power Platform, Copilot deployment, AI document processing, chatbots and workflow automation for SMEs.", "provider": { "@type": "Organization", "name": "3D7 Tech" }, "offers": { "@type": "Offer", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "3000", "priceCurrency": "GBP" } } } },
+      { "@type": "ListItem", "position": 4, "item": { "@type": "Service", "name": "Fractional Transformation Partner", "description": "Retained monthly engagement as Process Improvement Lead and AI Transformation Advisor for growing SMEs.", "provider": { "@type": "Organization", "name": "3D7 Tech" }, "offers": { "@type": "Offer", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "1000", "maxPrice": "5000", "priceCurrency": "GBP" } } } }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What does 3D7 Tech do?", "acceptedAnswer": { "@type": "Answer", "text": "3D7 Tech helps SMEs with 10-250 employees save time, reduce costs and scale through process improvement, AI automation and digital transformation. We serve businesses across North West England in accountancy, legal, estate agency, construction, recruitment, healthcare, manufacturing and logistics." } },
+      { "@type": "Question", "name": "How much does 3D7 Tech charge?", "acceptedAnswer": { "@type": "Answer", "text": "Process Health Check: £995-£2,500. AI Readiness Assessment: £1,500-£5,000. Automation and Implementation: £3,000-£20,000+. Fractional Transformation Partner retainer: £1,000-£5,000 per month." } },
+      { "@type": "Question", "name": "What sectors does 3D7 Tech work with?", "acceptedAnswer": { "@type": "Answer", "text": "Accountancy firms, solicitors, estate agencies, construction companies, recruitment firms, healthcare practices, manufacturing SMEs and logistics companies across North West England." } },
+      { "@type": "Question", "name": "How do I get started with 3D7 Tech?", "acceptedAnswer": { "@type": "Answer", "text": "Book a free 30-minute discovery call at https://richardawe.github.io/3d7tech-v2/book.html. No commitment required. We discuss your business, identify where you are losing time and money, and explain how we can help." } },
+      { "@type": "Question", "name": "Does 3D7 Tech work with non-technical businesses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Most clients have no dedicated IT function. 3D7 Tech handles the technical side and trains the client team to use and maintain the solutions we build." } },
+      { "@type": "Question", "name": "What AI tools does 3D7 Tech implement?", "acceptedAnswer": { "@type": "Answer", "text": "3D7 Tech is vendor-neutral. Common implementations include Microsoft Copilot, Power Platform (Power Automate, Power Apps, Power BI), AI document processing, and custom chatbots. Tools are chosen based on the client situation, not reseller commissions." } }
+    ]
   }
   </script>
 
