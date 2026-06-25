@@ -1,0 +1,30 @@
+name: Fetch North West Business News
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:          # allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch news from Google News RSS
+        run: node scripts/fetch-news.js
+
+      - name: Commit updated news
+        run: |
+          git config user.name  "3D7 News Bot"
+          git config user.email "actions@github.com"
+          git add data/news.json
+          git diff --staged --quiet || git commit -m "chore: update North West business news [skip ci]"
+          git push
