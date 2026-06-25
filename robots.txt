@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /data/news.json
+Disallow: /data/
+Disallow: /api/
+Disallow: /scripts/
+
+Sitemap: https://richardawe.github.io/3d7tech-v2/sitemap.xml

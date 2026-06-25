@@ -67,7 +67,7 @@
     var a = e.target.closest('a');
     if (!a) return;
     var href = a.href || '';
-    if (href.includes('cal.com') || href.includes('#booking')) {
+    if (href.includes('book.html') || href.includes('#booking')) {
       emit('booking_click', { href: href });
     }
     if (href.includes('audit.html') || href.includes('process-snapshot')) {

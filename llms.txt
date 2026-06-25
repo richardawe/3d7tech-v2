@@ -1,0 +1,36 @@
+# 3D7 Tech
+
+> Business Transformation & AI Automation Consultants helping SMEs save time, reduce costs and scale. Based in North West England, UK.
+
+3D7 Tech helps small and medium-sized businesses (10–250 employees) improve their operations through process improvement, AI automation and digital transformation. We work with accountancy firms, solicitors, estate agencies, construction companies, recruitment firms, healthcare practices, manufacturing SMEs and logistics companies across the North West of England.
+
+We are not a software vendor. We are consultants who identify where a business is losing time and money, design the solution, and implement it — or support the client team to do so.
+
+## Services
+
+- [Process Health Check](https://richardawe.github.io/3d7tech-v2/): Full process mapping across key operations, pain point and bottleneck analysis, cost of inefficiency assessment, prioritised improvement roadmap and findings presentation. Fixed fee £995–£2,500.
+- [AI Readiness Assessment](https://richardawo.github.io/3d7tech-v2/): Current systems and workflow review, AI opportunities assessment, data readiness review, security and compliance considerations, practical AI roadmap with ROI estimates. Fixed fee £1,500–£5,000.
+- [Automation & Implementation](https://richardawo.github.io/3d7tech-v2/): Microsoft Power Platform solutions, Copilot deployment and adoption, AI-powered document processing, customer service chatbots, workflow automation and dashboards, knowledge management systems. Project fee £3,000–£20,000+.
+- [Fractional Transformation Partner](https://richardawo.github.io/3d7tech-v2/): Ongoing Process Improvement Lead and AI Transformation Advisor on a retained basis. Includes regular strategy sessions and priority implementation support. Monthly retainer £1,000–£5,000/month.
+
+## Key Pages
+
+- [Home](https://richardawo.github.io/3d7tech-v2/index.html): Full overview — services, sectors, packages and pricing.
+- [Free SME Automation Guide](https://richardawo.github.io/3d7tech-v2/audit.html): "10 Processes Every SME Should Automate in 2026" — free PDF download.
+- [Book a Discovery Call](https://richardawo.github.io/3d7tech-v2/book.html): Book a free 30-minute discovery call. No commitment.
+- [Privacy Policy](https://richardawo.github.io/3d7tech-v2/privacy.html): GDPR-compliant data policy.
+
+## Sectors Served
+
+Accountancy Firms, Solicitors, Estate Agencies, Construction Companies, Recruitment Firms, Healthcare Practices, Manufacturing SMEs, Logistics Companies.
+
+## Contact
+
+- Process Improvement enquiries: abi@3d7tech.com
+- AI & Automation enquiries: richard@3d7tech.com
+- Location: North West England, UK
+- Serving: UK SMEs with 10–250 employees
+
+## Optional: Full Content
+
+- [Full site content](https://richardawo.github.io/3d7tech-v2/llms-full.txt)
