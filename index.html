@@ -5,15 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3D7 Tech — Business Transformation & AI Automation for SMEs</title>
   <meta name="description" content="We help SMEs save time, reduce costs and scale using process improvement and AI automation. Serving businesses across North West England.">
-  <meta property="og:title" content="3D7 Tech — Business Transformation & AI Automation">
+
+  <!-- Canonical & OG -->
+  <link rel="canonical" href="https://richardawe.github.io/3d7tech-v2/">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://richardawe.github.io/3d7tech-v2/">
+  <meta property="og:site_name"   content="3D7 Tech">
+  <meta property="og:title"       content="3D7 Tech — Business Transformation & AI Automation for SMEs">
   <meta property="og:description" content="Practical business transformation for growing organisations across North West England.">
-  <meta property="og:type" content="website">
+  <meta property="og:image"       content="https://richardawe.github.io/3d7tech-v2/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="3D7 Tech — Business Transformation & AI Automation for SMEs">
+  <meta name="twitter:description" content="Practical business transformation for growing organisations across North West England.">
+  <meta name="twitter:image"       content="https://richardawe.github.io/3d7tech-v2/assets/og-image.png">
+
+  <!-- Favicons -->
+  <link rel="icon"             href="assets/favicon.svg"          type="image/svg+xml">
+  <link rel="icon"             href="assets/favicon-32x32.png"    type="image/png" sizes="32x32">
+  <link rel="icon"             href="assets/favicon-16x16.png"    type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "3D7 Tech",
+    "url": "https://richardawe.github.io/3d7tech-v2/",
+    "logo": "https://richardawe.github.io/3d7tech-v2/assets/logo.svg",
+    "email": "richard3d7@gmail.com",
     "description": "Business Transformation & AI Automation Consultants helping SMEs save time, reduce costs and scale.",
     "areaServed": "North West England",
     "serviceType": ["Process Improvement", "AI Automation", "Digital Transformation"]
@@ -28,6 +51,19 @@
     /* ── Reset ────────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     img { display: block; max-width: 100%; }
+
+    /* ── Accessibility ────────────────────────────────────── */
+    .skip-link {
+      position: absolute; top: -48px; left: 0; z-index: 9999;
+      background: var(--navy); color: #fff;
+      padding: 0.6rem 1.2rem; font-size: 0.875rem; font-weight: 600;
+      text-decoration: none; border-bottom: 2px solid var(--amber);
+      transition: top 0.1s;
+    }
+    .skip-link:focus { top: 0; }
+    :focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+    button:focus-visible, a:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     button, input { font-family: inherit; }
 
     /* ── Tokens ───────────────────────────────────────────── */
@@ -707,6 +743,8 @@
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- ── Announcement bar ──────────────────────────────────── -->
 <div class="announce">
   Based in the North West &nbsp;·&nbsp; Serving UK SMEs &nbsp;·&nbsp;
@@ -726,7 +764,8 @@
 </nav>
 
 <!-- ── Hero ─────────────────────────────────────────────── -->
-<section class="hero" id="top">
+<section class="hero" id="top" aria-labelledby="hero-h1">
+<span id="main-content" tabindex="-1" style="position:absolute;top:0"></span>
   <div class="hero-inner">
 
     <div class="hero-body">
@@ -1020,9 +1059,8 @@
       <h3>Get Your Free Copy</h3>
       <p>Enter your details and we'll send it straight over.</p>
 
-      <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
-      <form id="guide-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-        <input type="hidden" name="_subject" value="New guide download — 3D7 Tech">
+      <form id="guide-form" novalidate aria-describedby="guide-form-err">
+        <div id="guide-form-err" role="alert" aria-live="polite" style="display:none;color:#c0392b;font-size:0.82rem;margin-bottom:0.75rem"></div>
         <input type="hidden" id="form-token" name="ref_token" value="">
 
         <div class="field">
@@ -1030,8 +1068,8 @@
           <input type="text" id="f-name" name="name" placeholder="Jane Smith" autocomplete="name">
         </div>
         <div class="field">
-          <label for="f-email">Work email <span style="color:var(--amber)">*</span></label>
-          <input type="email" id="f-email" name="email" placeholder="jane@yourcompany.co.uk" required autocomplete="email">
+          <label for="f-email">Work email <span aria-hidden="true" style="color:var(--amber)">*</span><span class="sr-only">(required)</span></label>
+          <input type="email" id="f-email" name="email" placeholder="jane@yourcompany.co.uk" required aria-required="true" autocomplete="email">
         </div>
         <div class="field">
           <label for="f-company">Company</label>
@@ -1097,8 +1135,8 @@
 </footer>
 
 <!-- ── Cookie consent ─────────────────────────────────────── -->
-<div id="cookie" role="dialog" aria-label="Cookie consent" style="display:none;">
-  <p>
+<div id="cookie" role="dialog" aria-modal="true" aria-labelledby="cookie-msg" style="display:none;">
+  <p id="cookie-msg">
     We use analytics cookies to understand how visitors use this site so we can improve it.
     No advertising trackers. <a href="privacy.html">Learn more</a>.
   </p>
@@ -1111,5 +1149,65 @@
 <script src="js/consent.js"></script>
 <script src="js/token.js"></script>
 <script src="js/events.js"></script>
+
+<script>
+  // Guide form handler — self-hosted, no Formspree
+  (function () {
+    var form = document.getElementById('guide-form');
+    var errBox = document.getElementById('guide-form-err');
+    if (!form) return;
+
+    function showErr(msg) {
+      errBox.textContent = msg;
+      errBox.style.display = 'block';
+      errBox.focus();
+    }
+    function clearErr() { errBox.style.display = 'none'; }
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      clearErr();
+
+      var btn    = form.querySelector('button[type="submit"]');
+      var name   = (form.querySelector('#f-name')  || {}).value || '';
+      var email  = (form.querySelector('#f-email') || {}).value || '';
+      var token  = (form.querySelector('#form-token') || {}).value || '';
+      name  = name.trim();
+      email = email.trim();
+
+      if (!email) { showErr('Please enter your work email address.'); return; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showErr('Please enter a valid email address.'); return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      var payload = { name: name, email: email, source: 'guide_form', ref_token: token || null };
+
+      try {
+        var existing = JSON.parse(localStorage.getItem('3d7_leads') || '[]');
+        existing.push(Object.assign({}, payload, { ts: new Date().toISOString() }));
+        localStorage.setItem('3d7_leads', JSON.stringify(existing));
+      } catch (_) {}
+
+      if (window.FORM_API_URL) {
+        try {
+          var r = await fetch(window.FORM_API_URL + '/api/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+          if (!r.ok) throw new Error('API ' + r.status);
+        } catch (err) {
+          console.warn('3D7: submit API unavailable, local storage only.', err);
+        }
+      }
+
+      // Replace form with download confirmation
+      form.innerHTML = '<p style="color:var(--green);font-weight:600;font-size:1rem;">✓ On its way! Check your inbox — or <a href=\"assets/10-processes-sme-2026.pdf\" download style=\"color:var(--amber)\">download it now</a>.</p>';
+    });
+  })();
+</script>
 </body>
 </html>

@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — 3D7 Tech</title>
+  <meta name="description" content="Privacy policy for 3D7 Tech — how we collect, use and protect your data.">
+  <link rel="canonical" href="https://richardawe.github.io/3d7tech-v2/privacy.html">
+
+  <!-- Favicons -->
+  <link rel="icon"             href="assets/favicon.svg"          type="image/svg+xml">
+  <link rel="icon"             href="assets/favicon-32x32.png"    type="image/png" sizes="32x32">
+  <link rel="icon"             href="assets/favicon-16x16.png"    type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,6 +24,9 @@
       --serif: 'Playfair Display', Georgia, serif; --sans: 'Inter', system-ui, sans-serif;
     }
     body { font-family: var(--sans); color: var(--body); background: var(--off-white); line-height: 1.7; }
+    .skip-link { position: absolute; top: -48px; left: 0; z-index: 9999; background: var(--navy); color: #fff; padding: 0.6rem 1.2rem; font-size: 0.875rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--amber); transition: top 0.1s; }
+    .skip-link:focus { top: 0; }
+    :focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
     .announce { background: var(--amber); color: #fff; text-align: center; padding: 0.55rem 1rem; font-size: 0.78rem; font-weight: 600; }
     .announce a { color: #fff; }
     .nav { background: var(--white); border-bottom: 2px solid var(--navy); display: flex; align-items: center; justify-content: space-between; padding: 0 6%; height: 66px; }
@@ -40,10 +52,11 @@
   </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <div class="announce">Based in the North West &nbsp;·&nbsp; <a href="index.html#booking">Book a Free Consultation →</a></div>
 <nav class="nav"><a href="/" class="nav-logo">3D7 <span>Tech</span></a><a href="index.html" class="nav-back">← Back to site</a></nav>
 
-<div class="page">
+<div class="page" id="main-content" tabindex="-1">
   <h1>Privacy Policy</h1>
   <p class="updated">Last updated: June 2026</p>
 
