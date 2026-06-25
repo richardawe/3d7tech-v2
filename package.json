@@ -1,0 +1,24 @@
+{
+  "name": "3d7tech-v2",
+  "version": "1.0.0",
+  "description": "3D7 Tech — Business Transformation & AI Automation for SMEs",
+  "main": "api/server.js",
+  "scripts": {
+    "start":        "node api/server.js",
+    "generate-pdf": "node scripts/generate-pdf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:41729/git/richardawe/3d7tech-v2"
+  },
+  "keywords": ["sme", "automation", "ai", "process-improvement"],
+  "author": "3D7 Tech",
+  "license": "ISC",
+  "dependencies": {
+    "cors":    "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}

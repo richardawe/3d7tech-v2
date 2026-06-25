@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:  #0d1e3a;
+    --amber: #b8721b;
+    --cream: #f4f0e8;
+    --rule:  #ddd8cc;
+    --muted: #666;
+  }
+
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #2e2e2e;
+    background: #fff;
+    font-size: 10pt;
+    line-height: 1.55;
+  }
+
+  /* ── Page breaks ── */
+  .page { page-break-after: always; padding: 0; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* ── Cover ── */
+  .cover {
+    background: var(--navy);
+    color: #fff;
+    min-height: 297mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 70px;
+    position: relative;
+  }
+  .cover-rule {
+    width: 60px; height: 4px;
+    background: var(--amber);
+    margin-bottom: 40px;
+  }
+  .cover-tag {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(184,114,27,0.9);
+    margin-bottom: 20px;
+  }
+  .cover h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38pt;
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -1px;
+    color: #fff;
+    margin-bottom: 28px;
+    max-width: 480px;
+  }
+  .cover h1 em { font-style: italic; color: var(--amber); }
+  .cover-sub {
+    font-size: 11pt;
+    color: rgba(255,255,255,0.6);
+    max-width: 440px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+  }
+  .cover-meta {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .cover-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 18pt;
+    font-weight: 800;
+    color: #fff;
+  }
+  .cover-brand span { color: var(--amber); }
+  .cover-date { font-size: 8pt; color: rgba(255,255,255,0.35); }
+  .cover-strip {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 8px;
+    background: var(--amber);
+  }
+
+  /* ── Inner pages ── */
+  .inner { padding: 52px 60px; }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--navy);
+    margin-bottom: 36px;
+  }
+  .page-header .brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 12pt;
+    font-weight: 800;
+    color: var(--navy);
+  }
+  .page-header .brand span { color: var(--amber); }
+  .page-header .section-name { font-size: 7.5pt; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+  /* ── TOC ── */
+  .toc-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 26pt;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  .toc-sub { font-size: 10pt; color: var(--muted); margin-bottom: 36px; }
+  .toc-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .toc-num { font-family: 'Playfair Display', Georgia, serif; font-size: 13pt; font-weight: 700; color: var(--amber); width: 40px; flex-shrink: 0; }
+  .toc-name { font-size: 10pt; font-weight: 600; color: var(--navy); flex: 1; }
+  .toc-sector { font-size: 8pt; color: var(--muted); margin-left: 8px; font-style: italic; }
+
+  /* ── Intro ── */
+  .intro-h {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22pt;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .intro-p { font-size: 10pt; color: #2e2e2e; line-height: 1.7; margin-bottom: 14px; }
+  .intro-box {
+    background: var(--cream);
+    border-left: 4px solid var(--amber);
+    padding: 16px 20px;
+    margin: 24px 0;
+  }
+  .intro-box p { font-size: 9.5pt; color: #2e2e2e; line-height: 1.65; }
+  .intro-box strong { color: var(--navy); }
+
+  /* ── Process pages ── */
+  .proc-kicker {
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 8px;
+  }
+  .proc-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 56pt;
+    font-weight: 900;
+    color: var(--rule);
+    line-height: 1;
+    margin-bottom: -8px;
+  }
+  .proc-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22pt;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+    margin-bottom: 6px;
+  }
+  .proc-subtitle { font-size: 10pt; color: var(--muted); margin-bottom: 22px; }
+
+  .badges { display: flex; gap: 8px; margin-bottom: 22px; flex-wrap: wrap; }
+  .badge {
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 2px;
+  }
+  .badge-sector { background: #e8e3da; color: var(--navy); }
+  .badge-low    { background: #d4edda; color: #1a5c2e; }
+  .badge-medium { background: #fff3cd; color: #7d5a00; }
+  .badge-high   { background: #f8d7da; color: #7c1d20; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+
+  .col-box { border: 1.5px solid var(--rule); padding: 16px; }
+  .col-box h4 {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .col-box ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .col-box li { font-size: 9pt; color: #2e2e2e; padding-left: 12px; position: relative; }
+  .col-box li::before { content: '—'; position: absolute; left: 0; color: var(--amber); font-weight: 700; }
+  .col-box.after { border-color: var(--navy); }
+  .col-box.after h4 { color: var(--navy); border-bottom-color: var(--navy); }
+
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+  .metric { background: var(--navy); color: #fff; padding: 14px; }
+  .metric-val { font-family: 'Playfair Display', Georgia, serif; font-size: 16pt; font-weight: 800; color: var(--amber); line-height: 1; margin-bottom: 4px; }
+  .metric-label { font-size: 7.5pt; color: rgba(255,255,255,0.55); line-height: 1.4; }
+
+  .tools-row { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--rule); }
+  .tools-row h4 { font-size: 8pt; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tool { font-size: 8pt; font-weight: 600; color: var(--navy); background: var(--cream); padding: 3px 8px; border: 1px solid var(--rule); }
+
+  /* ── Scoring framework ── */
+  .score-h { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 800; color: var(--navy); letter-spacing: -0.5px; margin-bottom: 8px; }
+  .score-sub { font-size: 10pt; color: var(--muted); margin-bottom: 28px; }
+  .score-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+  .score-table th { background: var(--navy); color: #fff; font-size: 8pt; font-weight: 600; letter-spacing: 0.05em; padding: 10px 12px; text-align: left; }
+  .score-table td { font-size: 9pt; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .score-table tr:nth-child(even) td { background: var(--cream); }
+  .score-col { font-weight: 700; color: var(--navy); }
+  .score-pts { font-family: 'Playfair Display', Georgia, serif; font-size: 13pt; font-weight: 700; color: var(--amber); }
+
+  .priority-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 20px; }
+  .priority-cell { border: 2px solid var(--rule); padding: 16px; }
+  .priority-cell.p1 { border-color: var(--navy); }
+  .priority-cell h4 { font-size: 9pt; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .priority-cell p  { font-size: 8.5pt; color: var(--muted); line-height: 1.5; }
+
+  /* ── Back page ── */
+  .back {
+    background: var(--cream);
+    min-height: 297mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 70px;
+    border-top: 4px solid var(--amber);
+  }
+  .back-rule { width: 60px; height: 4px; background: var(--navy); margin-bottom: 36px; }
+  .back h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 26pt; font-weight: 800; color: var(--navy); letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2; }
+  .back p  { font-size: 10pt; color: var(--muted); line-height: 1.7; margin-bottom: 14px; max-width: 500px; }
+  .back-services { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
+  .back-service { border: 2px solid var(--navy); padding: 16px; }
+  .back-service h4 { font-size: 9pt; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .back-service p  { font-size: 8.5pt; color: var(--muted); margin-bottom: 6px; }
+  .back-service .price { font-size: 9pt; font-weight: 700; color: var(--amber); }
+  .back-contact { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--rule); }
+  .back-contact p { font-size: 9pt; color: var(--navy); font-weight: 500; }
+  .back-contact a { color: var(--amber); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- ════════════ COVER ════════════ -->
+<div class="page">
+<div class="cover">
+  <div class="cover-strip"></div>
+  <div class="cover-rule"></div>
+  <div class="cover-tag">3D7 Tech · Free Business Guide · 2026</div>
+  <h1>10 Processes Every SME Should <em>Automate</em> in 2026</h1>
+  <p class="cover-sub">A practical, no-jargon guide for UK small and medium businesses. Find out which processes are costing you the most time and money — and exactly how to fix them.</p>
+  <div class="cover-meta">
+    <div class="cover-brand">3D7 <span>Tech</span></div>
+    <div class="cover-date">Published 2026 · 3d7tech.co.uk</div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ CONTENTS ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header">
+    <div class="brand">3D7 <span>Tech</span></div>
+    <div class="section-name">Contents</div>
+  </div>
+  <div class="toc-title">What's Inside</div>
+  <p class="toc-sub">10 processes, each with the problem, the solution, real savings figures, and recommended tools.</p>
+
+  <div class="toc-item"><span class="toc-num">01</span><span class="toc-name">Client Onboarding &amp; Intake</span><span class="toc-sector">All sectors</span></div>
+  <div class="toc-item"><span class="toc-num">02</span><span class="toc-name">Invoice Processing &amp; Chasing</span><span class="toc-sector">All sectors</span></div>
+  <div class="toc-item"><span class="toc-num">03</span><span class="toc-name">HR &amp; Staff Onboarding</span><span class="toc-sector">All sectors</span></div>
+  <div class="toc-item"><span class="toc-num">04</span><span class="toc-name">Report Generation &amp; Data Entry</span><span class="toc-sector">Accountancy, Construction, Logistics</span></div>
+  <div class="toc-item"><span class="toc-num">05</span><span class="toc-name">Customer Enquiry Handling</span><span class="toc-sector">Legal, Estate Agents, Healthcare</span></div>
+  <div class="toc-item"><span class="toc-num">06</span><span class="toc-name">Document Management &amp; Filing</span><span class="toc-sector">Legal, Accountancy, Construction</span></div>
+  <div class="toc-item"><span class="toc-num">07</span><span class="toc-name">Scheduling &amp; Appointment Booking</span><span class="toc-sector">Healthcare, Recruitment, Estate Agents</span></div>
+  <div class="toc-item"><span class="toc-num">08</span><span class="toc-name">Compliance &amp; Audit Trail Tracking</span><span class="toc-sector">Legal, Healthcare, Manufacturing</span></div>
+  <div class="toc-item"><span class="toc-num">09</span><span class="toc-name">CRM Updates &amp; Pipeline Management</span><span class="toc-sector">Recruitment, Estate Agents, Legal</span></div>
+  <div class="toc-item"><span class="toc-num">10</span><span class="toc-name">Internal Knowledge &amp; Handover</span><span class="toc-sector">All sectors</span></div>
+  <div class="toc-item" style="border-bottom:none"><span class="toc-num" style="color:var(--navy)">+</span><span class="toc-name">Priority Scoring Framework</span><span class="toc-sector">Use this to decide where to start</span></div>
+</div>
+</div>
+
+<!-- ════════════ INTRO ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header">
+    <div class="brand">3D7 <span>Tech</span></div>
+    <div class="section-name">Introduction</div>
+  </div>
+  <h2 class="intro-h">Why Most SMEs Are Losing 20–30% of Their Productive Time to Work That Should Not Exist</h2>
+  <p class="intro-p">Every week, inside growing businesses across the North West, skilled and expensive people are doing things that a process or piece of software could handle in seconds. Not because they want to, and not because the business is badly run — but because nobody stopped to ask whether a better way existed.</p>
+  <p class="intro-p">The irony is that the tasks most worth automating are also the most visible: the invoices chased by hand, the reports built by copying figures from one spreadsheet to another, the new employee sitting without a laptop for three days because nobody triggered the IT request.</p>
+  <p class="intro-p">This guide covers the 10 processes we see most consistently costing UK SMEs time and money. For each one we explain what the manual version looks like, what automated looks like, and how much you can realistically save. We've also included the actual tools we recommend for each — practical choices that work with Microsoft 365, which most UK businesses already have.</p>
+  <div class="intro-box">
+    <p><strong>How to use this guide:</strong> Read through and tick the processes that sound familiar. Use the Priority Scoring Framework at the end to decide which to tackle first. If you'd like a frank conversation about how these apply to your specific business, book a free 30-minute call at <strong>3d7tech.co.uk/book</strong>.</p>
+  </div>
+  <p class="intro-p">We have deliberately avoided recommending expensive, enterprise-only tools. Every suggestion in this guide can work in a business with 10–250 employees, without a large IT budget or a full-time tech team.</p>
+  <p class="intro-p">One important note: automation works best when the underlying process is understood first. If a process is chaotic, automating it just produces chaotic output faster. Where relevant, we flag where a short process-mapping exercise will pay for itself before any tool is purchased.</p>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 01 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 01</div></div>
+  <div class="proc-kicker">Highest ROI · All Sectors</div>
+  <div class="proc-num">01</div>
+  <div class="proc-title">Client Onboarding &amp; Intake</div>
+  <p class="proc-subtitle">Turning a new client into an active, set-up client — without manual data entry at every step.</p>
+  <div class="badges"><span class="badge badge-sector">All Sectors</span><span class="badge badge-low">Low Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>Client emails or posts signed forms</li>
+        <li>Staff re-key details into CRM manually</li>
+        <li>IT access request sent by email, delayed</li>
+        <li>Welcome pack assembled and emailed by hand</li>
+        <li>Each department chases their own missing info</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>Digital intake form populates CRM automatically</li>
+        <li>ID verification and document signing in one flow</li>
+        <li>IT access request triggers on form completion</li>
+        <li>Welcome sequence delivers itself over 5 days</li>
+        <li>Single checklist visible to all departments</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">45–90 min</div><div class="metric-label">Saved per new client</div></div>
+    <div class="metric"><div class="metric-val">£1,200+</div><div class="metric-label">Annual saving per 20 new clients</div></div>
+    <div class="metric"><div class="metric-val">2 days</div><div class="metric-label">Faster onboarding on average</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools (Microsoft 365 stack)</h4>
+    <div class="tools">
+      <span class="tool">Power Automate</span>
+      <span class="tool">Microsoft Forms</span>
+      <span class="tool">SharePoint</span>
+      <span class="tool">DocuSign / Adobe Sign</span>
+      <span class="tool">Teams Notifications</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 02 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 02</div></div>
+  <div class="proc-kicker">Quick Win · All Sectors</div>
+  <div class="proc-num">02</div>
+  <div class="proc-title">Invoice Processing &amp; Chasing</div>
+  <p class="proc-subtitle">Receiving supplier invoices, matching them, approving payment, and recovering overdue debts — without manual handling at each step.</p>
+  <div class="badges"><span class="badge badge-sector">All Sectors</span><span class="badge badge-low">Low Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>Invoices arrive by email, printed and filed</li>
+        <li>Staff match to purchase orders manually</li>
+        <li>Approval emails chain across 3–4 people</li>
+        <li>Overdue chasing done by accounts individually</li>
+        <li>Data entered into accounting system by hand</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>OCR extracts invoice data on receipt</li>
+        <li>3-way PO matching happens automatically</li>
+        <li>Approval routing based on value/supplier rules</li>
+        <li>Overdue reminders sent on a fixed schedule</li>
+        <li>Approved invoices post to accounting system</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">8–15 hrs</div><div class="metric-label">Saved per month per accounts person</div></div>
+    <div class="metric"><div class="metric-val">12 days</div><div class="metric-label">Faster debtor payment on average</div></div>
+    <div class="metric"><div class="metric-val">£6K+</div><div class="metric-label">Typical annual saving for 50-person firm</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">Xero + Hubdoc</span>
+      <span class="tool">Power Automate</span>
+      <span class="tool">Microsoft Syntex (OCR)</span>
+      <span class="tool">Sage 50 Automation</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 03 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 03</div></div>
+  <div class="proc-kicker">Staff Experience · All Sectors</div>
+  <div class="proc-num">03</div>
+  <div class="proc-title">HR &amp; Staff Onboarding</div>
+  <p class="proc-subtitle">Everything from offer letter to day-one-ready — without HR and IT chasing each other across three systems.</p>
+  <div class="badges"><span class="badge badge-sector">All Sectors</span><span class="badge badge-medium">Medium Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>Offer letter sent as Word doc by email</li>
+        <li>Right to work checks done with photocopier</li>
+        <li>IT request emailed separately, often forgotten</li>
+        <li>Policy documents in a folder nobody finds</li>
+        <li>New starter's first day is chaotic and slow</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>Offer letter generated and e-signed in one flow</li>
+        <li>Right to work captured digitally with ID scan</li>
+        <li>IT provisioning triggered automatically at offer</li>
+        <li>Policies delivered and acknowledged digitally</li>
+        <li>Day 1 schedule sent automatically the day before</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">6–10 hrs</div><div class="metric-label">HR time saved per new hire</div></div>
+    <div class="metric"><div class="metric-val">3 days</div><div class="metric-label">Faster time-to-productive</div></div>
+    <div class="metric"><div class="metric-val">↑ 40%</div><div class="metric-label">Improvement in new starter satisfaction</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">Power Automate</span>
+      <span class="tool">SharePoint Intranet</span>
+      <span class="tool">DocuSign</span>
+      <span class="tool">BambooHR / Breathe HR</span>
+      <span class="tool">Microsoft Entra ID</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 04 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 04</div></div>
+  <div class="proc-kicker">Management Time · Accountancy, Construction, Logistics</div>
+  <div class="proc-num">04</div>
+  <div class="proc-title">Report Generation &amp; Data Entry</div>
+  <p class="proc-subtitle">Producing the weekly or monthly reports that managers need — without a Friday afternoon data assembly exercise.</p>
+  <div class="badges"><span class="badge badge-sector">Accountancy</span><span class="badge badge-sector">Construction</span><span class="badge badge-sector">Logistics</span><span class="badge badge-low">Low Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>Data copied from system A into spreadsheet</li>
+        <li>Manually cross-referenced with system B</li>
+        <li>Report formatted in PowerPoint by a senior</li>
+        <li>Same report rebuilt every week from scratch</li>
+        <li>Errors creep in; version control breaks down</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>Live dashboard pulls from all systems in real time</li>
+        <li>Weekly report emails itself to stakeholders</li>
+        <li>Exceptions and anomalies flagged automatically</li>
+        <li>One source of truth — no conflicting versions</li>
+        <li>Senior time freed for analysis, not assembly</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">4–8 hrs</div><div class="metric-label">Per week reclaimed per manager</div></div>
+    <div class="metric"><div class="metric-val">Real-time</div><div class="metric-label">Data instead of last-week's numbers</div></div>
+    <div class="metric"><div class="metric-val">£12K+</div><div class="metric-label">Annual value of senior time released</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">Power BI</span>
+      <span class="tool">Power Automate</span>
+      <span class="tool">Microsoft Copilot</span>
+      <span class="tool">Excel Data Refresh</span>
+      <span class="tool">Dataverse</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 05 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 05</div></div>
+  <div class="proc-kicker">Customer Experience · Legal, Estate Agents, Healthcare</div>
+  <div class="proc-num">05</div>
+  <div class="proc-title">Customer Enquiry Handling</div>
+  <p class="proc-subtitle">Responding to initial enquiries quickly and consistently — without every response depending on a specific person being available.</p>
+  <div class="badges"><span class="badge badge-sector">Legal</span><span class="badge badge-sector">Estate Agents</span><span class="badge badge-sector">Healthcare</span><span class="badge badge-medium">Medium Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>Enquiries land in a shared inbox, unassigned</li>
+        <li>Response time varies — 2 hours to 2 days</li>
+        <li>Same questions answered repeatedly by staff</li>
+        <li>Out-of-hours enquiries sit until morning</li>
+        <li>No visibility of how many enquiries are open</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>AI chatbot handles FAQs 24/7 on website</li>
+        <li>Enquiries triaged and routed automatically</li>
+        <li>Instant acknowledgement with next steps</li>
+        <li>Complex queries escalated to right person</li>
+        <li>Dashboard shows queue, SLA, and response time</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">65%</div><div class="metric-label">Of FAQs handled without staff involvement</div></div>
+    <div class="metric"><div class="metric-val">&lt;2 min</div><div class="metric-label">Average first response time (vs 4+ hrs)</div></div>
+    <div class="metric"><div class="metric-val">↑ 28%</div><div class="metric-label">Increase in converted enquiries</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">Microsoft Copilot Studio</span>
+      <span class="tool">Power Automate</span>
+      <span class="tool">Dynamics 365</span>
+      <span class="tool">Azure AI Foundry</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 06 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 06</div></div>
+  <div class="proc-kicker">Compliance Risk · Legal, Accountancy, Construction</div>
+  <div class="proc-num">06</div>
+  <div class="proc-title">Document Management &amp; Filing</div>
+  <p class="proc-subtitle">Finding, versioning, and sharing documents — without emailing attachments and losing track of which file is current.</p>
+  <div class="badges"><span class="badge badge-sector">Legal</span><span class="badge badge-sector">Accountancy</span><span class="badge badge-sector">Construction</span><span class="badge badge-low">Low Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>Documents saved to personal drives and desktops</li>
+        <li>Files shared as email attachments</li>
+        <li>"Final_v3_ACTUAL_FINAL.docx" naming conventions</li>
+        <li>Clients can't access their own documents easily</li>
+        <li>Retrieval for audits takes days of searching</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>Central document library with auto-classification</li>
+        <li>OCR makes all documents searchable</li>
+        <li>Version control built in — one live version</li>
+        <li>Client portal for self-service document access</li>
+        <li>Audit retrieval via search in under 60 seconds</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">30 min</div><div class="metric-label">Saved per document retrieval request</div></div>
+    <div class="metric"><div class="metric-val">Near-zero</div><div class="metric-label">Risk of wrong version being used</div></div>
+    <div class="metric"><div class="metric-val">GDPR</div><div class="metric-label">Compliant retention policies enforced automatically</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">SharePoint + OneDrive</span>
+      <span class="tool">Microsoft Syntex</span>
+      <span class="tool">Power Automate</span>
+      <span class="tool">Teams Channels</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 07 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 07</div></div>
+  <div class="proc-kicker">Revenue Impact · Healthcare, Recruitment, Estate Agents</div>
+  <div class="proc-num">07</div>
+  <div class="proc-title">Scheduling &amp; Appointment Booking</div>
+  <p class="proc-subtitle">Booking meetings and appointments without the back-and-forth email chain and double-booking risk.</p>
+  <div class="badges"><span class="badge badge-sector">Healthcare</span><span class="badge badge-sector">Recruitment</span><span class="badge badge-sector">Estate Agents</span><span class="badge badge-low">Low Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>3–5 emails to agree a single meeting time</li>
+        <li>Double bookings happen regularly</li>
+        <li>No-shows aren't followed up systematically</li>
+        <li>Rescheduling creates cascading diary problems</li>
+        <li>Out-of-hours bookings require manual checking</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>Client books into live availability directly</li>
+        <li>Confirmation and reminders send automatically</li>
+        <li>No-show triggers an automated follow-up</li>
+        <li>Reschedule handled by client without staff</li>
+        <li>Bookings sync to all calendars instantly</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">15 min</div><div class="metric-label">Saved per appointment booked</div></div>
+    <div class="metric"><div class="metric-val">↓ 35%</div><div class="metric-label">Reduction in no-show rate</div></div>
+    <div class="metric"><div class="metric-val">24/7</div><div class="metric-label">Bookings accepted outside office hours</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">Microsoft Bookings</span>
+      <span class="tool">Outlook Calendar</span>
+      <span class="tool">Power Automate</span>
+      <span class="tool">Teams Meeting Links</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 08 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 08</div></div>
+  <div class="proc-kicker">Risk Reduction · Legal, Healthcare, Manufacturing</div>
+  <div class="proc-num">08</div>
+  <div class="proc-title">Compliance &amp; Audit Trail Tracking</div>
+  <p class="proc-subtitle">Demonstrating that the right things happened in the right order — without relying on staff to remember to log everything manually.</p>
+  <div class="badges"><span class="badge badge-sector">Legal</span><span class="badge badge-sector">Healthcare</span><span class="badge badge-sector">Manufacturing</span><span class="badge badge-medium">Medium Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>Compliance logs maintained in separate spreadsheets</li>
+        <li>Staff forget to record what they've done</li>
+        <li>Audit preparation is a stressful multi-day exercise</li>
+        <li>Expiry dates on certifications missed</li>
+        <li>Incident reporting is inconsistent and delayed</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>System actions logged automatically to audit trail</li>
+        <li>Compliance tasks assigned with deadlines and reminders</li>
+        <li>Certificate expiries trigger renewal workflows</li>
+        <li>Incident reports captured via structured forms</li>
+        <li>Audit pack generated automatically on request</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">3–5 days</div><div class="metric-label">Saved on audit preparation</div></div>
+    <div class="metric"><div class="metric-val">Zero</div><div class="metric-label">Missed certification renewals</div></div>
+    <div class="metric"><div class="metric-val">↓ 80%</div><div class="metric-label">Reduction in manual compliance logging</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">SharePoint + Power Automate</span>
+      <span class="tool">Microsoft Purview</span>
+      <span class="tool">Dataverse Audit Logs</span>
+      <span class="tool">Power Apps Forms</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 09 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 09</div></div>
+  <div class="proc-kicker">Revenue Visibility · Recruitment, Estate Agents, Legal</div>
+  <div class="proc-num">09</div>
+  <div class="proc-title">CRM Updates &amp; Pipeline Management</div>
+  <p class="proc-subtitle">Keeping your sales and client pipeline accurate — without asking your best people to spend time on admin instead of relationships.</p>
+  <div class="badges"><span class="badge badge-sector">Recruitment</span><span class="badge badge-sector">Estate Agents</span><span class="badge badge-sector">Legal</span><span class="badge badge-low">Low Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>CRM updated inconsistently — or not at all</li>
+        <li>Deals and clients exist only in someone's head</li>
+        <li>Forecasting is guesswork because data isn't clean</li>
+        <li>Follow-ups fall through the cracks</li>
+        <li>Client history lost when staff leave</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>Emails and calls logged to CRM automatically</li>
+        <li>Stage changes trigger automated follow-up sequences</li>
+        <li>Pipeline forecast updates in real time</li>
+        <li>Dormant contacts flagged after set inactivity period</li>
+        <li>Full client history visible to the whole team</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">3–4 hrs</div><div class="metric-label">Per week per salesperson reclaimed</div></div>
+    <div class="metric"><div class="metric-val">↑ 22%</div><div class="metric-label">Increase in follow-up conversion rate</div></div>
+    <div class="metric"><div class="metric-val">Accurate</div><div class="metric-label">Pipeline forecast for the first time</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">Dynamics 365 Sales</span>
+      <span class="tool">HubSpot CRM</span>
+      <span class="tool">Power Automate</span>
+      <span class="tool">Copilot for Sales</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ PROCESS 10 ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Process 10</div></div>
+  <div class="proc-kicker">Resilience · All Sectors</div>
+  <div class="proc-num">10</div>
+  <div class="proc-title">Internal Knowledge &amp; Handover</div>
+  <p class="proc-subtitle">Making sure the business doesn't stop when a key person is absent — by capturing what they know in a system, not just in their head.</p>
+  <div class="badges"><span class="badge badge-sector">All Sectors</span><span class="badge badge-medium">Medium Effort</span></div>
+  <div class="two-col">
+    <div class="col-box">
+      <h4>Manual today</h4>
+      <ul>
+        <li>How-to knowledge lives in individual heads</li>
+        <li>Handover notes written in a rush, then lost</li>
+        <li>New starters ask the same questions repeatedly</li>
+        <li>Procedures differ between staff doing same role</li>
+        <li>Covering for absences is consistently disruptive</li>
+      </ul>
+    </div>
+    <div class="col-box after">
+      <h4>Automated version</h4>
+      <ul>
+        <li>AI-indexed knowledge base built from existing docs</li>
+        <li>Staff can ask questions and get instant answers</li>
+        <li>Process guides and SOPs in one searchable place</li>
+        <li>Onboarding draws from the same knowledge base</li>
+        <li>Gaps in documentation surfaced automatically</li>
+      </ul>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metric"><div class="metric-val">↓ 60%</div><div class="metric-label">Reduction in "where do I find…" interruptions</div></div>
+    <div class="metric"><div class="metric-val">50%</div><div class="metric-label">Faster onboarding for new and covering staff</div></div>
+    <div class="metric"><div class="metric-val">Resilient</div><div class="metric-label">Business continuity when key staff are absent</div></div>
+  </div>
+  <div class="tools-row">
+    <h4>Recommended tools</h4>
+    <div class="tools">
+      <span class="tool">Microsoft Copilot Studio</span>
+      <span class="tool">SharePoint + Viva Topics</span>
+      <span class="tool">Azure OpenAI (on your data)</span>
+      <span class="tool">Teams Wiki</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ SCORING FRAMEWORK ════════════ -->
+<div class="page">
+<div class="inner">
+  <div class="page-header"><div class="brand">3D7 <span>Tech</span></div><div class="section-name">Priority Scoring Framework</div></div>
+  <h2 class="score-h">Where to Start: Priority Scoring Framework</h2>
+  <p class="score-sub">Score each process against these four factors. The highest total score is your starting point.</p>
+
+  <table class="score-table">
+    <thead><tr><th>Factor</th><th>Score 1</th><th>Score 2</th><th>Score 3</th></tr></thead>
+    <tbody>
+      <tr><td class="score-col">Time cost</td><td>Process takes &lt;1 hr/week</td><td>1–5 hrs/week</td><td class="score-pts">3 pts — &gt;5 hrs/week</td></tr>
+      <tr><td class="score-col">Staff frustration</td><td>Rarely complained about</td><td>Occasionally raised</td><td class="score-pts">3 pts — Consistently raised</td></tr>
+      <tr><td class="score-col">Implementation effort</td><td class="score-pts">3 pts — Low (days)</td><td>Medium (weeks)</td><td>High (months)</td></tr>
+      <tr><td class="score-col">Error/risk exposure</td><td>Errors are minor</td><td>Errors cause rework</td><td class="score-pts">3 pts — Errors have compliance or cost impact</td></tr>
+    </tbody>
+  </table>
+
+  <div class="priority-grid">
+    <div class="priority-cell p1">
+      <h4>Score 9–12: Start here</h4>
+      <p>High time cost, staff impact, and risk — with achievable implementation. This is your first project.</p>
+    </div>
+    <div class="priority-cell">
+      <h4>Score 6–8: Plan next</h4>
+      <p>Significant value but may require more preparation. Schedule within the next quarter.</p>
+    </div>
+    <div class="priority-cell">
+      <h4>Score 3–5: Watch list</h4>
+      <p>Lower priority now. Revisit once your higher-scoring processes are running.</p>
+    </div>
+  </div>
+
+  <div class="intro-box" style="margin-top:24px">
+    <p><strong>Not sure where to start?</strong> We offer a free Process Health Check conversation — 30 minutes, no commitment — where we help you score your specific processes and identify the one that'll deliver the fastest return. Book at <strong>3d7tech.co.uk/book</strong>.</p>
+  </div>
+</div>
+</div>
+
+<!-- ════════════ BACK PAGE ════════════ -->
+<div class="page">
+<div class="back">
+  <div class="back-rule"></div>
+  <h2>Ready to Put This Into Practice?</h2>
+  <p>We work with SMEs across North West England to implement these improvements — using the tools they already have, without expensive consultancy overheads or long project timelines.</p>
+  <p>Start with a free 30-minute discovery call. We'll identify the two or three processes in your business where automation would have the biggest immediate impact.</p>
+  <div class="back-services">
+    <div class="back-service">
+      <h4>Process Health Check</h4>
+      <p>Map your key processes, identify the biggest inefficiencies, and get a prioritised roadmap.</p>
+      <div class="price">£995 – £2,500</div>
+    </div>
+    <div class="back-service">
+      <h4>AI Readiness Assessment</h4>
+      <p>Understand exactly where AI and automation will deliver the most value in your specific business.</p>
+      <div class="price">£1,500 – £5,000</div>
+    </div>
+    <div class="back-service">
+      <h4>Automation &amp; Implementation</h4>
+      <p>Build and deploy the actual solutions — Power Platform, Copilot, chatbots, and dashboards.</p>
+      <div class="price">£3,000 – £20,000+</div>
+    </div>
+    <div class="back-service">
+      <h4>Fractional Partner</h4>
+      <p>Ongoing AI and process improvement leadership for businesses that want to keep improving.</p>
+      <div class="price">£1,000 – £5,000/month</div>
+    </div>
+  </div>
+  <div class="back-contact">
+    <p>Book a free call: <a href="https://3d7tech.co.uk/book">3d7tech.co.uk/book</a></p>
+    <p style="margin-top:6px">Email: <a href="mailto:richard3d7@gmail.com">richard3d7@gmail.com</a></p>
+    <p style="margin-top:6px; font-size:8pt; color:#999;">3D7 Tech · Business Transformation &amp; AI Automation · North West England</p>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
