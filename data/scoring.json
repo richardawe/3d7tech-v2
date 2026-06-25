@@ -1,6 +1,22 @@
 {
-  "source_weights": { "companies_house": 1.0, "job_boards": 1.2 },
-  "sector_weights": { "solicitors": 1.1, "accountancy": 1.0, "estate_agency": 0.9, "construction": 1.0, "recruitment": 1.1, "healthcare": 1.0, "manufacturing": 0.9, "logistics": 0.9 },
-  "template_performance": { "process_pain_angle": 0.0, "cost_saving_angle": 0.0, "growth_angle": 0.0 },
+  "source_weights": {
+    "companies_house": 1.0,
+    "job_boards": 1.2
+  },
+  "sector_weights": {
+    "solicitors": 1.1,
+    "accountancy": 1.0,
+    "estate_agents": 1.0,
+    "construction": 0.9,
+    "recruitment": 1.0,
+    "healthcare": 1.1,
+    "manufacturing": 0.95,
+    "logistics": 0.9
+  },
+  "template_performance": {
+    "process_pain_angle": 0.0,
+    "cost_savings_angle": 0.0,
+    "competitor_angle": 0.0
+  },
   "updated_at": null
 }
