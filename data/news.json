@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T01:52:44.317Z",
+  "updated": "2026-09-09T10:15:42.831Z",
   "items": [
     {
       "title": "Innovate UK-funded Frontier Fellowship opens 250 AI training places for women - EdTech Innovation Hub",
@@ -9,9 +9,9 @@
       "ts": "2026-08-20T00:00:46.000Z"
     },
     {
-      "title": "Progress Update on North West Mutual Bank - Preston City Council",
+      "title": "Progress Update on North West Mutual Bank - preston.gov.uk",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMjZrcGFlVDg4NWRkMHdCc09tdDFsSG0wTThOMXNLSm9rVVVWZXIzRXp1Sm9rUG9BUmFIaktPRS1BNnl2SUNiVHRoMXN6TkNLbHp4bDk1T2lfM3NPMGg2TjFueHVSVXluSENzN3hVM3BHQ2hMaE1XS1k2OHZBVHpuYVNIalJaNk85QWc?oc=5",
-      "source": "Preston City Council",
+      "source": "preston.gov.uk",
       "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
       "ts": "2026-08-19T07:00:00.000Z"
     },
@@ -44,6 +44,13 @@
       "ts": "2026-07-20T07:00:00.000Z"
     },
     {
+      "title": "North West and Northern Ireland lead turnover growth among mid-market businesses - BDO - Insider Media Ltd",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNXB5Z0daN04tNGgzd0FNV1hwMXFYb2ctZDZqcVZiR2NQU2VvU2hUUTJzOGxnbzJVYTQtcF96dUpDTWRFcnplVzFPRjBkOV9OV1RJNjItZXhTVUhXZGVsQXdqdml5UDZDaFA2QTk2VEdsNHJQVS0yNlRraDdSLUhKNTEtQ19zd1E5bHlnWVhsTGNKc1djMUhEV1o1bUVRT0toeDB0bTNjQ2VScVdxTjJnVXRlQlpSOXhEODBoRnNRMEIyUDdQZlE?oc=5",
+      "source": "Insider Media Ltd",
+      "pubDate": "Mon, 20 Jul 2026 07:00:00 GMT",
+      "ts": "2026-07-20T07:00:00.000Z"
+    },
+    {
       "title": "North of England unites for the first-ever joint trade mission to India - Liverpool City Region Combined Authority",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZFpHby1SODc0cVM1VkpMNmhEcVdMYUczOUpONDdmaDRNUHhCNnRZc0lMQkE4X3NyUnR0RGxvcldTbTJJa3luRXE0aVVBTUpsMVBlMDBnMEc1dGp6MWFqeklsaEExZ0dMV2hfeHRJcUpxQmtuOWdhemdjTXl3WExvemFMeUhxeVllLXlsYlVSdmlvRjZfRFRYYzdTb1lPajdKVDFKNG9vX0x2ZXltS18xWkprYzh2MzY5eWc?oc=5",
       "source": "Liverpool City Region Combined Authority",
@@ -72,18 +79,11 @@
       "ts": "2026-07-02T07:00:00.000Z"
     },
     {
-      "title": "A World Cup bounce could provide an uplift in trade for pubs, restaurants and shops - Wigan Today",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWHVXYkJlYXZqM0hyNE1pZmZFemlpRG9YamoxcmpyTVU5TjVYcndvMjlBYzJwUlRZSGx2eW91eXNzWTE1R00wa2RpMFRfTmtIVm1hb0JocHgtY25iNDR2cGZxQUNzYTdvVFlTU0cxaWV2VG1aNjVrcThTTUdzWmNubA?oc=5",
-      "source": "Wigan Today",
-      "pubDate": "Thu, 25 Jun 2026 07:00:00 GMT",
-      "ts": "2026-06-25T07:00:00.000Z"
-    },
-    {
-      "title": "Britain ‘faces deindustrialisation’ without relief from high energy prices, survey warns - The Guardian",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWFZzSTVJaDJkUEpHbGNRbEdjT1hsdzRTZ0RKeERndjU0WWRlaTh3YU53YzZPaS1rNzZUb1NBR3hPVkZyVUhMZW04aHhtb0gwT01Pc1BGal80SmlQZkdYNkU1ZGQ2ZGI5c2I4TlM2Zzd6VmhUbWdsN2RLOWs4U09RZE03ODFOU081QkVrNUxFblowODhhLUxUVTB4cS0wU1cwckhNTUxJOUV3YWVRUEhLZXZOMDJNYk15bkE?oc=5",
-      "source": "The Guardian",
-      "pubDate": "Mon, 15 Jun 2026 07:00:00 GMT",
-      "ts": "2026-06-15T07:00:00.000Z"
+      "title": "Renewable energy business SolarSense powers up new Manchester hub - thebusinessdesk.com",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaFhWRTZ4Sll2NE85aFdXN0FvdWw0a29wVW90OUpIRDdGVWVWM29EVk0yZm9WNGZQYWlxUE5xMGNwOFFsMDIyVmZoQU9POV9WcjRwOC15b2sxYVA1VFdrSWQ1d3BUaS11UVNRZUhPLTR4UmNEbklwNHBSZ3R4OTI4Yml3NVUyUEVvcEE4Y0ZzTFRhV0VUb2V6SXBGLVV6YWFnWjJTU2NYejF2cFdFVWJwRTdlOTVpbkc2S1lsOFN5dGNacEFqc1FVRkYtdjk?oc=5",
+      "source": "thebusinessdesk.com",
+      "pubDate": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "ts": "2026-07-01T07:00:00.000Z"
     }
   ]
 }
