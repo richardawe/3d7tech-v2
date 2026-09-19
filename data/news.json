@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T01:58:47.306Z",
+  "updated": "2026-09-19T09:51:03.266Z",
   "items": [
     {
       "title": "Innovate UK-funded Frontier Fellowship opens 250 AI training places for women - EdTech Innovation Hub",
@@ -16,13 +16,6 @@
       "ts": "2026-08-19T07:00:00.000Z"
     },
     {
-      "title": "UK: Majority of Train Services Resume Across North West - Railway-News",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWWVoV1pwZXgzUGFEaHpuc3dUTUxQTlFnZWFnaEhvejJhNk5BdEk2ZTB2emRudTM2aGNFODVjcG5SX0VjVUxqanNXMVZ5dWJqRE1VeHFBMTRRbXJRaG9JVk80QkdXVjRPQ1ktWVI3VzNaVGI2cTRULVZyd2JZUndUX3NfRkNidWM?oc=5",
-      "source": "Railway-News",
-      "pubDate": "Fri, 07 Aug 2026 07:00:00 GMT",
-      "ts": "2026-08-07T07:00:00.000Z"
-    },
-    {
       "title": "Trains stop across north-west England after power cut hits signalling centre - The Guardian",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNelFjOHNrTEZUakhQejJOdXk3N0dubG9Kam9yMDkyc2dza2l4QkFFNVpDV3hLbnVpUU4wZ3EwaV9KeXdYWGpuTjJwcTM0TFV1dmFyZWRjREdPb0hKUmVmeFJXd3E5NXFpTkE5MHYwQXBHd3ZFc1FDV0JMZk8zS1RKLW9RUzdCNWxlOGxJemNqcUxBSEhPR2c3WjNUSXpMRk1OLWZTX1l3TGpFb1UwbGdz?oc=5",
       "source": "The Guardian",
@@ -35,6 +28,13 @@
       "source": "Insider Media Ltd",
       "pubDate": "Tue, 04 Aug 2026 07:00:00 GMT",
       "ts": "2026-08-04T07:00:00.000Z"
+    },
+    {
+      "title": "North West Net Zero Hub event explores how UK can accelerate clean energy delivery - liverpoolcityregion-ca.gov.uk",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZG12YkhGOHFRUE1hSmFLLXg3N1pPOWhKV2hLRnhWTUlNaE9PWFdKU3ZzT0xjQzhxU1RGVlZIcXVGQlpCVno0bmFBbWxXRENfRXBwdWZPUmFDU3hWdTNTZDItX01xeDF1RldDeEpsWEZiN3BvOElSam94cFctdVdvRHlxd1FEejc4WlpoMkI0S3l6WURNR0FwY2tKaXBFeEI3cTlwNzI3R1pzcllITGFfSFJQekxwYkNQbWpRbEN4Qy1QaFJJNEF1cA?oc=5",
+      "source": "liverpoolcityregion-ca.gov.uk",
+      "pubDate": "Wed, 29 Jul 2026 07:00:00 GMT",
+      "ts": "2026-07-29T07:00:00.000Z"
     },
     {
       "title": "North West - ICAEW.com",
@@ -65,9 +65,9 @@
       "ts": "2026-07-20T07:00:00.000Z"
     },
     {
-      "title": "North of England unites for the first-ever joint trade mission to India - Liverpool City Region Combined Authority",
+      "title": "North of England unites for the first-ever joint trade mission to India - liverpoolcityregion-ca.gov.uk",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZFpHby1SODc0cVM1VkpMNmhEcVdMYUczOUpONDdmaDRNUHhCNnRZc0lMQkE4X3NyUnR0RGxvcldTbTJJa3luRXE0aVVBTUpsMVBlMDBnMEc1dGp6MWFqeklsaEExZ0dMV2hfeHRJcUpxQmtuOWdhemdjTXl3WExvemFMeUhxeVllLXlsYlVSdmlvRjZfRFRYYzdTb1lPajdKVDFKNG9vX0x2ZXltS18xWkprYzh2MzY5eWc?oc=5",
-      "source": "Liverpool City Region Combined Authority",
+      "source": "liverpoolcityregion-ca.gov.uk",
       "pubDate": "Wed, 15 Jul 2026 07:00:00 GMT",
       "ts": "2026-07-15T07:00:00.000Z"
     },
@@ -79,11 +79,11 @@
       "ts": "2026-07-14T07:00:00.000Z"
     },
     {
-      "title": "House prices in South of England fall while North sees growth - business-live.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYnlKTEZzQzVIVUYtcWQ3UGp0ampNMVE0eXFwa0NrdDVVV1FlZnhRQ19OV1JwWktpcmYyX0kxdEZ3ZmQxSUlIWTBYZ1ZXeWpSUlVhNVZPY2U3NU9rSlFFckpiemlPSzdDN3ByblZMWjkwbTRzTmlYVFcxQ1VPQVotOGNsRGV4MGJIdVp1bmdMVDNnd9IBlwFBVV95cUxQcDVwWHNXYmFoR214QmJZREJNOWFZM0ZfQVd4bjl5bEUtS09pZVctWnZCZHVQQ0lQSDZwbWRIMklWZUJ0SkZqb0JVbWhYUC1EdHl2TTV3QkF0UEd3dnpsdk81N3gzODFPWEJnaGp3NXdCTTV1Y28wRjNrZDVOR2hEQXRxZlJnejhiclJQZ0dialZCM3BEbkl3?oc=5",
-      "source": "business-live.co.uk",
-      "pubDate": "Tue, 07 Jul 2026 07:00:00 GMT",
-      "ts": "2026-07-07T07:00:00.000Z"
+      "title": "West Midlands business failures jump 61% as UK administrations hit highest level since 2010 - TheBusinessDesk.com",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMW9pTVdjdXl0Q2JXMEZKenhPeTFFN01nellweWM0b3NDa3ZKLUl1SFN2QzU5bWdxbzBPbzhQc2VvanM0czBHOFVjNV9SRjJReklmR0t3VHMwVGoyekRtcW9NdTJKcERBUXhxNFY4RUFON2N2anpZT3FKenFPWEt6b1RCQ3J2X1NnNWdTaVprWW12MGs?oc=5",
+      "source": "TheBusinessDesk.com",
+      "pubDate": "Fri, 10 Jul 2026 07:00:00 GMT",
+      "ts": "2026-07-10T07:00:00.000Z"
     }
   ]
 }
