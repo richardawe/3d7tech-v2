@@ -1,13 +1,6 @@
 {
-  "updated": "2026-09-29T03:01:53.880Z",
+  "updated": "2026-09-29T11:42:34.359Z",
   "items": [
-    {
-      "title": "CFPs: Reducing Missed Appointments Through Planned Care Innovation (UK) - fundsforNGOs",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYy0tcUJkLWNRbElRZk5SUDR3aDEyb1k2cV9BRDN0ejVEY0hqMlBsLVhyVndZQm01dkp6OEZrbVM3X1pKNGExX0FrLVFMMXRwTEdIWHo2SVR1NUY0X056bXR6TU9GTU1ydEVfakNyZmo0VUtnbE9rNTV5MjR3MmZXenlXeTBVd05RRXJUUmx0aVdRTktjMWk4ejJOSkE2SDljR2toZlJXZXV0dFFTZ1k3cGlObWvSAbQBQVVfeXFMTmMtLXFCZC1jUWxJUWZOUlA0d2gxMm9ZNnFfQUQzdHo1RGNIajJQbC1YclZ3WUJtNXZKejhGa21TN19aSjRhMV9Bay1RTDF0cExHSFh6NklUdTVGNF9Oem10ek1PRk1NcnRFX2pDcmZqNFVLZ2xPazU1eTI0dzJmV3p5V3kwVXdOUUVyVFJsdGlXUU5LYzFpOHoyTkpBNkg5Y0draGZSV2V1dHRRU2dZN3BpTm1r?oc=5",
-      "source": "fundsforNGOs",
-      "pubDate": "Fri, 25 Sep 2026 08:57:37 GMT",
-      "ts": "2026-09-25T08:57:37.000Z"
-    },
     {
       "title": "GBBO returns – but where are the UK’s bakery sweet spots? - Simply Business",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd3JweTRHa2ZRSnRpTnhjanpVWldpSE96dEktZVhBdE0zbXZTUG1HbnZ3TVFtV21yV1FNNk9xTml0Y3dYZlZzZzdZaTRTby1GUVAtU1FCa3VzYXlnejdnWGtGNWtUbEV3X0RXc2dQcTdGcm9aXzN3X0FJZzM5SWRMUGYtSVhuTDZrRTBV?oc=5",
@@ -72,18 +65,25 @@
       "ts": "2026-07-14T07:00:00.000Z"
     },
     {
-      "title": "Ranger Fire and Security acquires two new businesses - fmj.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVWFXSUtVYUhqQnJzOHRjYnVaM0MxWXpWcENwTWFBSDVnQl9RejlQSG8zbUQyWmw2Zm9NNnRVT05wRzNFVm5xY2d0blFtY0ZVTHp2bVBlUmlGd0I3a1lPdjhoNW5hbHFSU2dxaW0tMEdMYUtaUGZxRjBQYlpYMkZrUw?oc=5",
-      "source": "fmj.co.uk",
-      "pubDate": "Mon, 06 Jul 2026 07:00:00 GMT",
-      "ts": "2026-07-06T07:00:00.000Z"
-    },
-    {
       "title": "North and South deals for PE-backed fire and security business Ranger as it buys CIA and AKD - business-live.co.uk",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNmEwM0Ffam5ibFJjdzhBZ3pJd3lJVm1mWDc4c0dCMlRfeGhQUTM2UGVncnkxY3dDLWYwNTVTa2g3SFhZNkVaNVNFUWFGQW05OFc2akViUGhxNDNHaHJhVjJZdEswNVdGTC0xeDVkQTM5NWc3NVRJM2RqbEl3QjlVeDJsdXFzUdIBiwFBVV95cUxORGdGV243WDd2WFhRY3ZiNVlpbVBaeDAzT29MdEZSaXo4OVFXRVpBcUQyOTN2RTRnbjB5R1lVdkxHMzFzd1ZUQVpGOFltRkdBWGE3SGM5aXFxU2YxR1JTYVdsbDdmQndadGZlQXdGck03c0x4R1o2WXI4OGZfVlBLV05IQVdBZjV3UDk0?oc=5",
       "source": "business-live.co.uk",
       "pubDate": "Mon, 06 Jul 2026 07:00:00 GMT",
       "ts": "2026-07-06T07:00:00.000Z"
+    },
+    {
+      "title": "London attracts almost £7bn in equity investment - London Business News",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE81aEFXa09FNkJBZzRkV0tZLV9ZcU5oZ1IzZDdib2tnQmdlZWhYOXplTEhSUjZ3aUs2S2s1X3JNS25TbGNXNlZid0Z1VWU3OU9FZUNR?oc=5",
+      "source": "London Business News",
+      "pubDate": "Thu, 02 Jul 2026 07:00:00 GMT",
+      "ts": "2026-07-02T07:00:00.000Z"
+    },
+    {
+      "title": "Andy Burnham wants change to define his leadership - The Business Times",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLU10LTc5SlZHQUhvNDRkb2MxQzRzMjRLMVRtZndsLUttdTF1Z1djbG1LWjN2aUNDX1FPNHgtdjVhaGt0V3U4WlVVcU96VF9YVkJhTncyVUs5c2NzSDJVZ05BNXNDREdrRFg0VnJpRWZzWXdzSHphRWwxeVNRV0dJZnhxOEduRmdkclRfN0ZMSFVxcXVtTjA2MnI3MGR2UQ?oc=5",
+      "source": "The Business Times",
+      "pubDate": "Wed, 24 Jun 2026 07:00:00 GMT",
+      "ts": "2026-06-24T07:00:00.000Z"
     }
   ]
 }
