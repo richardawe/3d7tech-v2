@@ -1,68 +1,12 @@
 {
-  "updated": "2026-10-27T02:41:07.864Z",
+  "updated": "2026-10-27T11:10:50.010Z",
   "items": [
     {
-      "title": "Storm Boelo clean-up begins as thousands left without power - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LNFAzYjhPbGU2dDVCOGpOV0RWNU9zRzV0eFhZbVotQ2dkdE52TzUxTXVsbVQ4YnRFZUlZSm1QTThjdllGWnQ4bmtCNDhjUWl3Z1JvaERqUV9pSnc?oc=5",
-      "source": "BBC",
-      "pubDate": "Mon, 26 Oct 2026 22:43:44 GMT",
-      "ts": "2026-10-26T22:43:44.000Z"
-    },
-    {
-      "title": "Storm Boelo: Thousands in Cumbria and North East without power - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA3c1phQ19MS19zVm1JQ01LNkVIcXRUOG1mZlYzcF9TdzhMRm5qSmFPZ0ZnRUUzZGpZQ2Z3WGE2aFJ2cGYxaGZMSkpoT1YyYUtZM1dsS2VBR1I2M0k?oc=5",
-      "source": "BBC",
-      "pubDate": "Mon, 26 Oct 2026 17:21:21 GMT",
-      "ts": "2026-10-26T17:21:21.000Z"
-    },
-    {
-      "title": "Northern England must unite to become a global tech powerhouse - Doncaster Free Press",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPN0w2SHM1U09nYThDYWdESjZETUNTT3RCdjhNMDZFa09JOHA2MlBmdXBwVlJuX2tKczBzSW1OUDRwSEY3bGdlOVg1bTEyVXliVFNwd1FhemlOT2JDZ2dveFJaa2tnTi1wdEhHR0JXOHZpdFdEN0hEcXFldTJsc2FTM09HM2ZNX0VqUmc2MVdQY3N0dXBaeXZZcnJoMVZpU1lNOWJURnV3ckY4TGNvdkJQNzBn?oc=5",
-      "source": "Doncaster Free Press",
-      "pubDate": "Mon, 26 Oct 2026 16:46:00 GMT",
-      "ts": "2026-10-26T16:46:00.000Z"
-    },
-    {
-      "title": "What North West firms need from the Budget - Bdaily",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaG9pdmRDdGdYeXN0Wl9QbHdnWm41a251TXdPSkNmSWJhT0w1eGJyRlpFTlBwMFl6cWk3QjJNVTNCRmJoS3d0VTNTdWxrdzhkSGM5a25JQVpma0pvUV9vTnpraGNLbUl0Q1FBRU5FNURpR0JSSV8tZG43aEVEOC00X0Flc2c5VDFOOGFpdnA5MkNLZw?oc=5",
-      "source": "Bdaily",
-      "pubDate": "Mon, 26 Oct 2026 16:37:27 GMT",
-      "ts": "2026-10-26T16:37:27.000Z"
-    },
-    {
-      "title": "£50m loan will support housing provider’s programme for North West and Yorkshire - TheBusinessDesk.com",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOblBvbV9jM05hdDJEbVpybjYtVnJCY09jQ2hjczdKYmNTTlM4cS1kWWFVVFhXZUl5a3pybGUtdElzc2tqNGEyM21IcUlrTWp6QzkxUFB2QnYtT01MaHZXZ0RBcTZyMGRRVWN4UkgxLU9ULVRtamdXWkx2OEx6THRoWUdHWTQ5ZkZDbl9IWlEwS2pjSWlaMXhjZFdoUjdOVUppbFJhajF3UDNMUVg1Z2VmRDBvYmZ0d1pXblduMXdUVUpUeWY2b0Z6MGMwcWRSLVlGMDF1T256QXdtQQ?oc=5",
-      "source": "TheBusinessDesk.com",
-      "pubDate": "Mon, 26 Oct 2026 12:38:47 GMT",
-      "ts": "2026-10-26T12:38:47.000Z"
-    },
-    {
-      "title": "Invest NI to open new north west office at Ebrington Plaza - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fR09DVEE4ckVXV0NMOTdhVFZ2OW16NnZ2SFNvZ2VybXkyODRFcDZ1U1dUTUpQZm9NZmJIWXluU25jVlhZX2lxOTZxWEs1bmZVd2dNMXRqblE2cWRFYWc?oc=5",
-      "source": "BBC",
-      "pubDate": "Mon, 26 Oct 2026 10:50:52 GMT",
-      "ts": "2026-10-26T10:50:52.000Z"
-    },
-    {
-      "title": "Local entrepreneur reports 250% growth in EV business following Royal Sustainability Summit - Stand Up For Southport",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONmZWZHFfMWJmTFRoMkYybkV6NU9uVXRaQVc2ZHJoXzdNNS04cXZ2Y0xWWlFoMkRRQ21GdjczaXBOckNrUmVmaUpFWFBqdXk5eG1YSFJRWlZZM1NjSXhNMEZuMzVYaFJxRFZwb09YN1JKM2RaLUVkc2YyZXc1UUd3LS11Z0E5SGtOa1kwQ1JhTW1iSnFDQlpDYmx1ZVVKbzlRSEh5VlNRWXVvdHZBQlhURFNOaF9FcUhYUFNCaTBzR2c?oc=5",
-      "source": "Stand Up For Southport",
-      "pubDate": "Mon, 26 Oct 2026 08:08:46 GMT",
-      "ts": "2026-10-26T08:08:46.000Z"
-    },
-    {
-      "title": "An insider's guide to Budget Day: 'Don't fall off the kerb' - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41QmpGaUhVaDNsYThHNTRudXRJbHBYV3MwMzFxUDZKckdWSUI5eThvTXRUWEF3OFgtekU0cm92aWFybG5qLXNjVmtzUDd4SmVRcm9ia0U1aUk3ckk?oc=5",
-      "source": "BBC",
-      "pubDate": "Mon, 26 Oct 2026 06:25:13 GMT",
-      "ts": "2026-10-26T06:25:13.000Z"
-    },
-    {
-      "title": "Thousands in North West without power and cars wrecked in Storm Boelo - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ieFRCQl9NUGJSZHNHVC1xU0x0M3lVSlNZRm03M29JMjVwcUdiRkhaaFJSdVh5UVdYYTc3UFhEc2dCZTlKWDgydUpxRTVoZ1NNdS1lY1JwVmRlTGs?oc=5",
-      "source": "BBC",
-      "pubDate": "Sun, 25 Oct 2026 13:07:15 GMT",
-      "ts": "2026-10-25T13:07:15.000Z"
+      "title": "The UK Sectors and Areas Suffering The Most Closures – What Can Businesses do to Ease Financial Pressures - HR News",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOFdnMDd3NmRWMnJPNEh1dEhlT3JnNWl1dXR0RE1CSGNlR05lekVYRkVkVTlYUVJnbGlrU3lIV2JQZ0FEa2Y4c2MzaGhTOWl5c3VBeWlIUkp6V2VBUVBRSGFUek1MSmZncVA0bUhqTFlhd1I3MUtTbFo4MU1jTXJ3dUVfenRpOXpsZlFvYXBEczVwVDExcVNqTmh3NnhkRFRoY216WGE5ZVhsV2tndzVwdFZmN045aFhhTVRmejAybzRVYms?oc=5",
+      "source": "HR News",
+      "pubDate": "Fri, 23 Oct 2026 14:38:38 GMT",
+      "ts": "2026-10-23T14:38:38.000Z"
     },
     {
       "title": "North West firms still cautious over hiring and costs, Bank agents say - Business Live",
@@ -72,18 +16,74 @@
       "ts": "2026-10-08T07:00:00.000Z"
     },
     {
-      "title": "Press release - 7 October, 2026 - British Business Bank",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQaTlkOUZYUHdLVlNTWnhJN1BaNFBGWDJDOFJ1WldBVFRWelZHZzVDdHlSZ1E1c0F5a0stZjRhS2h4a1BpTnByWElkeUx5NEhwcnpOMDdPUDI0X2N4ekFGakJVdERTQ0wyMzlSVGo2bzh1ZkVOX05aZkh2UHZDdnFHOThORlVEREd1X0YzdDRLakRRZlNPS2hBY0Z6cUpQZ2dJQ2k5aERvM3h3QXM5YUNzU1EyaU5sb2hkeHcweUN1Z01ZYUdxLUE4UHFWRzM1elI0akhhckZmQWg?oc=5",
-      "source": "British Business Bank",
-      "pubDate": "Wed, 07 Oct 2026 07:00:00 GMT",
-      "ts": "2026-10-07T07:00:00.000Z"
-    },
-    {
       "title": "An examination of 2026’s R&D Tax Credit Statistics - Leyton",
       "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE02Si1YdTdTZ0lDejRnVkc2cWNGVGpxeXViNHVDZ1l6SE9halJESE5tOFVJZ29nckNwUFlxZmxQTDU0RUJkUVNjenlyTnJuQ0REMHhjQndrb1VDVy1JMDgxVFVaWGc3ZjhHYk5EczB3NTgtUXl0cmtoMUl3?oc=5",
       "source": "Leyton",
       "pubDate": "Fri, 02 Oct 2026 07:00:00 GMT",
       "ts": "2026-10-02T07:00:00.000Z"
+    },
+    {
+      "title": "Avanti West Coast to be renationalised in March as ministers float public ownership of new trains - The Guardian",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdUtrcVFvZWtfdUduS0J3bXFZZVFtNDQ4MlYyNWlOWS1HMDR0REdzZ0NsU3JRUHU3SmhsWkxrZ2gyUUlvc0dsd05aNEE5WmVTdmhKSFIzMm5ob1hFZDlpVlJTTm1yNExkVEp6bkZDaTlZb25jZ2NkMml5akxMNTIxV0lnRG5meEZlZ1BwdkM3UzlQRnF1dWV2YkJ1Rzg?oc=5",
+      "source": "The Guardian",
+      "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT",
+      "ts": "2026-09-28T07:00:00.000Z"
+    },
+    {
+      "title": "Admiral insurance firm to cut 500 jobs in the UK - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11aXBEUEVDUUdGSUFUVzBlMERaYVhTOWYzbEhhQXZ4a3gwMmZkbThaRExUOTJkTkNVWk1pZllrOUI0cE95aDAwVGtXcWxuODVTcUZkX1BhNnJjRjR2UGc?oc=5",
+      "source": "BBC",
+      "pubDate": "Wed, 23 Sep 2026 07:00:00 GMT",
+      "ts": "2026-09-23T07:00:00.000Z"
+    },
+    {
+      "title": "Froncysyllte family firm named one of the Nation’s Favourite Businesses - Wrexham.com",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNT3ZvX1ZvV3ZOejFzYjJiV3pCSk1tTk5FTlN1V0M0b2lsYXd1b21OY2hySDhyd1o3ZTBJZzAwR3FCWXh6cUxMT2FwUms4dkpTeE91OURkT2t3SG83RGlQY3B2NWxRYmVES242UmMzbzEwWkpZSDRUNnZQT0F2NVVEeHdzcUd4SjBxODZKdTA4ZkJma0dZNDRzRG1nVC02dWNlZ1JnX0g2azZranc?oc=5",
+      "source": "Wrexham.com",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "ts": "2026-09-08T07:00:00.000Z"
+    },
+    {
+      "title": "British Business Bank to unveil new £150m Northern scale-up fund - TheBusinessDesk.com",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeUtyd0IzN0R3bEgzenlwWEt6ZTRPRVBKMnJZaXlOcENUYkpLYURBdGk0NlNzT3VwZlRIbFo4MHdJSllLRE15TVN1OUN3Q0g0SlcyOHV0TDVlUlJyX1NQV3VtUGMtbE1KOWV4cGs5X0pzUFFzLURKbnZfd25zQVM5djU3Ry1nZDRzUzl6VzRSbnJBbDZvQmpUckFWWXB5bjBvZVQ5VjFuQWI0d05EWjhzZ1JSVVZDbnAwNWc?oc=5",
+      "source": "TheBusinessDesk.com",
+      "pubDate": "Mon, 07 Sep 2026 07:00:00 GMT",
+      "ts": "2026-09-07T07:00:00.000Z"
+    },
+    {
+      "title": "Inside the crackdown on illegal vapes in north-west England - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nVnhueTZFdEJLXzIxa0V2YU1Pb3FselFyU3A5WWJDUnNtWTdkZ0NkMGRLSmpCUDZrNTJ5SmFzbl9BUjY2Y0ZKV2wwOG1DdEZGNDhpYllqTzZVZw?oc=5",
+      "source": "BBC",
+      "pubDate": "Sun, 06 Sep 2026 07:00:00 GMT",
+      "ts": "2026-09-06T07:00:00.000Z"
+    },
+    {
+      "title": "New CEO for North West Business Leadership Team - Yahoo News UK",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSW42Q2NGQ0o0QlpOUnYwbmVaT044bERDTWZfUUQ4SkNvZkxZVUNrbC1VZThJSHRTRkpPTFQweVNsdmN6OW9pZU5XeEh4NlI0elhkLXczakt2YkJ1S3JBSUdKWUVneXU3OXpXbWszWGtBdHhoRnJONkgyYjExNUVHVA?oc=5",
+      "source": "Yahoo News UK",
+      "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "ts": "2026-09-03T07:00:00.000Z"
+    },
+    {
+      "title": "Heathrow Invites Businesses Across North Wales to Regional Business Summit - Business News Wales",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPamxobXNyNTkwWlhIQTZpUDJqTk82STFrejhCcGQ3VlpfZzhINWFJaXVHRnZuNUZhcFFfOGxzMy02emlXUi1BN1d4OVhFakMtaVF0aGNkVEdjM1cxNHpaRjBscW1TU3JYUE1vbFBqd1ppU3BSRmFVZV9IWXlJSHB6aDZLbE9PZUVPZ2NhTFNaTng5NGdTMUZYdU9TREtHVlpySDR3QVV1OVo?oc=5",
+      "source": "Business News Wales",
+      "pubDate": "Mon, 17 Aug 2026 07:00:00 GMT",
+      "ts": "2026-08-17T07:00:00.000Z"
+    },
+    {
+      "title": "UK: Majority of Train Services Resume Across North West - Railway-News",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWWVoV1pwZXgzUGFEaHpuc3dUTUxQTlFnZWFnaEhvejJhNk5BdEk2ZTB2emRudTM2aGNFODVjcG5SX0VjVUxqanNXMVZ5dWJqRE1VeHFBMTRRbXJRaG9JVk80QkdXVjRPQ1ktWVI3VzNaVGI2cTRULVZyd2JZUndUX3NfRkNidWM?oc=5",
+      "source": "Railway-News",
+      "pubDate": "Fri, 07 Aug 2026 07:00:00 GMT",
+      "ts": "2026-08-07T07:00:00.000Z"
+    },
+    {
+      "title": "North West 250: Celebrating the region’s most successful privately-owned businesses - Insider Media Ltd",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbkNxMTNMTW9XMDVzNGMzNEVsS0RFRDZHZ2UtclhfSUx6MUI2bG5vbjZjai0tUGZGWm9YaElBZzJrVVFGVE1SVmRnWnpBTHB2Ym1UN0NiVE16TVBIOHc1YjFEcTE1bk5wbnJlTXc4THdnLXJOVG9HWHFsREw5TXF5ckRrZDVNNFBHY0ZoX0lTQm5fSGFqWGpJNU1LR3NNbGY4SDFCMVY2ejIxSTdpUWNvV3l3TGtwSGZqYjJEWFZ6V1BhRDBU?oc=5",
+      "source": "Insider Media Ltd",
+      "pubDate": "Fri, 07 Aug 2026 07:00:00 GMT",
+      "ts": "2026-08-07T07:00:00.000Z"
     }
   ]
 }
